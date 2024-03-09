@@ -2,6 +2,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:tugastpm1_123190080_simpleapp/views/MathAppOne.dart';
+import 'package:tugastpm1_123190080_simpleapp/views/MathAppTwo.dart';
 
 class SecondScreen extends StatelessWidget {
   SecondScreen({super.key});
@@ -89,7 +90,14 @@ class SecondScreen extends StatelessWidget {
                         ),
                         SizedBox(height: 3),
                         ElevatedButton(
-                          onPressed: () {},
+                          onPressed: () {
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(builder: (context) {
+                                return MathAppTwo();
+                              }),
+                            );
+                          },
                           child: Text("odd and even"),
                         ),
                       ],

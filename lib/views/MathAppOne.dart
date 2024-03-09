@@ -54,6 +54,7 @@ class _MathPageOneState extends State<MathPageOne> {
       body: Padding(
         padding: const EdgeInsets.all(20.0),
         child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
           children: [
             TextField(
               controller: num1Controller,
@@ -62,6 +63,7 @@ class _MathPageOneState extends State<MathPageOne> {
                 labelText: 'Angka Pertama',
               ),
             ),
+            SizedBox(height: 20),
             TextField(
               controller: num2Controller,
               keyboardType: TextInputType.number,
@@ -69,9 +71,7 @@ class _MathPageOneState extends State<MathPageOne> {
                 labelText: 'Angka Kedua',
               ),
             ),
-            SizedBox(
-              height: 20,
-            ),
+            SizedBox(height: 20),
             ElevatedButton(
               onPressed: () {
                 int num1 = int.parse(num1Controller.text);
@@ -82,6 +82,7 @@ class _MathPageOneState extends State<MathPageOne> {
               },
               child: Text('Penjumlahan'),
             ),
+            SizedBox(height: 20),
             ElevatedButton(
               onPressed: () {
                 int num1 = int.parse(num1Controller.text);
