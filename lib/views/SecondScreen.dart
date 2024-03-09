@@ -14,7 +14,7 @@ class SecondScreen extends StatelessWidget {
         appBar: AppBar(
           title: Text('Menu Utama'),
         ),
-        body: Padding(
+        body: SingleChildScrollView(
             padding: const EdgeInsets.all(20.0),
             child: Container(
                 color: Colors.greenAccent,
