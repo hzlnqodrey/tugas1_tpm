@@ -34,6 +34,22 @@ class _MathPageOneState extends State<MathPageOne> {
 
   int result = 0;
 
+  void _penjumlahan(BuildContext context) {
+    int num1 = int.parse(num1Controller.text);
+    int num2 = int.parse(num2Controller.text);
+    setState(() {
+      result = num1 + num2;
+    });
+  }
+
+  void _pengurangan(BuildContext context) {
+    int num1 = int.parse(num1Controller.text);
+    int num2 = int.parse(num2Controller.text);
+    setState(() {
+      result = num1 - num2;
+    });
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -73,24 +89,12 @@ class _MathPageOneState extends State<MathPageOne> {
             ),
             SizedBox(height: 20),
             ElevatedButton(
-              onPressed: () {
-                int num1 = int.parse(num1Controller.text);
-                int num2 = int.parse(num2Controller.text);
-                setState(() {
-                  result = num1 + num2;
-                });
-              },
+              onPressed: () => _penjumlahan(context),
               child: Text('Penjumlahan'),
             ),
             SizedBox(height: 20),
             ElevatedButton(
-              onPressed: () {
-                int num1 = int.parse(num1Controller.text);
-                int num2 = int.parse(num2Controller.text);
-                setState(() {
-                  result = num1 - num2;
-                });
-              },
+              onPressed: () => _pengurangan(context),
               child: Text('Pengurangan'),
             ),
             SizedBox(
