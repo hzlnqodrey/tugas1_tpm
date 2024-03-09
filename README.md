@@ -1,16 +1,15 @@
-# tugastpm1_123190080_simpleapp
+# tugaspraktpm_123190080_loginpage_application_1
+----
+## Identitas
+- Nama    : Hazlan Muhammad Qodri
+- NIM     : 123190080
+- Kelas   : TP Mobile IF-C
+- Dosen Pengampu : Bagus Muhammad Akbar, S.ST., M.Kom.
 
-A new Flutter project.
+## Deskripsi Tugas
+Teknologi dan Pemrograman Mobile IF-C (20232) - Tugas 2 Simple App dengan Menu:
+  - Login App
+  - Menu Utama
+  - Menu Penjumlahan dan Pengurangan
+  - Menu Cek Ganjil dan Genap
 
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
